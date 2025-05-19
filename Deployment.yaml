@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pythonflask
-        image: neehar2601/pythonflask:latest
+        image: vaishnavai/pythonflask:latest
         ports:
         - containerPort: 5070
