@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonflask
+  labels:
+    app: pythonflask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythonflask
+  template:
+    metadata:
+      labels:
+        app: pythonflask
+    spec:
+      containers:
+      - name: pythonflask
+        image: neehar2601/pythonflask:latest
+        ports:
+        - containerPort: 5070
